@@ -13,7 +13,7 @@
 } 
 export default Counter;***/
 
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 
 const Counter = () => {
     const [count, setCount] = useState(0);
@@ -21,8 +21,7 @@ const Counter = () => {
     const handleClick = () => {
         setCount (count + 1)
     }
-    useEffect (() => {
-    })
+   
 
     return (
         <button onClick = {handleClick}>{count}</button>
